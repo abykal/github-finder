@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import Navbar from './components/Navbar'
 import Alert from './components/Alert'
+import About from './components/About'
 
 
 class App extends Component() {
