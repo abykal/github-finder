@@ -39,7 +39,7 @@ class User extends Component {
         ) : (
           <i className="fas fa-times-circle text-red-800"/>
         )}
-        <div className="p-4 border-2 mx-3 my-0 grid-2 rounded">
+        <div className="p-4 border-2 mx-3 my-0 grid-2 roundedr">
           <div className="flex flex-col w-full mx-auto justify-center items-center text-center">
             <img src={avatar_url} className="rounded-full w-40" alt=''/>
             <h1 className="text-2xl text-indigo-600 font-semibold my-2">{name}</h1>
