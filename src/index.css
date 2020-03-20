@@ -13,5 +13,9 @@ code {
 }
 
 .trans-animation {
-  transition: opacity 0.2s ease-in;
+  transition: opacity margin 0.2s ease-in;
+}
+
+input:focus {
+  outline:none !important;
 }

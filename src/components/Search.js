@@ -23,25 +23,27 @@ export class Search extends Component {
 
     return (
       <div>
-        <form onSubmit={this.onSubmit} className="block w-full p-3 text-lg border-2">
+        <form onSubmit={this.onSubmit} className="flex flex-row w-full p-3 text-lg">
           <input
             type='text'
             name='text'
             placeholder='Search Users...'
             value={this.state.text}
             onChange={this.onChange}
+            className="bg-white text-indigo-400 focus:outline-none focus:shadow-outline border border-indigo-200 rounded-lg py-2 px-4 mb-3 mr-3 block w-full appearance-none leading-normal"
           />
           <input
             type='submit'
             value='Search'
-            className="block w-full bg-red-200 text-red-800 mr-1 px-3 py-5 cursor-pointer trans-animation"
+            className="w-full bg-indigo-200 text-indigo-800 text-2xl font-semibold p-2 mb-3 mr-3 cursor-pointer rounded-lg trans-animation"
           />
+          {showClear && (
+            <button className="w-full bg-indigo-200 text-indigo-800 text-2xl font-semibold p-2 mb-3 cursor-pointer rounded-lg trans-animation" onClick={clearUsers}>
+              Clear
+            </button>
+          )}
         </form>
-        {showClear && (
-          <button className="block w-full bg-red-200 text-red-800 mr-1 px-3 py-5 cursor-pointer trans-animation" onClick={clearUsers}>
-            Clear
-          </button>
-        )}
+        
       </div>
     );
   }
